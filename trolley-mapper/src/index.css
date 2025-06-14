@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img {
+    @apply inline-block;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  height: 100vh;
+}
+
+html {
+  background-color: #161617;
+}
+
+input[type="date"] {
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f6fbfa;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+/* input number arrows removed */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input {
+  color-scheme: dark;
+}
